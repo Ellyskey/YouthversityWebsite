@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <title> YOUthversity | Home </title>
+    <link rel="icon" type="image/x-icon" href="/images/YOUthversityLogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--external CSS link-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        </style>
+</head>
+
+<header>
+    <div class="logo-title">
+        <img src="images/YOUthversityLogo.png" alt="YOUthversity" class="logo">
+        <h1 class="site-title"><span class="highlight">YOU</span>thversity</h1>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Who</a></li>
+            <li><a href="#">Where</a></li>
+            <div class="dropdown"><i class="fa fa-caret-down"></i>
+                <button class="dropbtn">Activities</button>
+                <div class="dropdown-content">
+                  <a href="#">Book-club</a>
+                  <a href="#">Interviews</a>
+                  <a href="#">Duolingo Tournament</a>
+                </div>
+              </div>
+            <div class="dropdown"><i class="fa fa-caret-down"></i>
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <a href="https://merch.youthversity.org/">Merch</a>
+                    <a href="https://ellyskey.notion.site/Elly-s-Info-Page-29076275cf004a24a5e74973f5f70019?pvs=4">Elly's Mediakit</a>
+                </div>
+              </div>
+        </ul>
+    </nav>
+</header>
+
+<body id="duolingo-body">
+    <main>
+        <div class="tournament-container">
+            <!-- Header Section -->
+            <section class="duolingo-page">
+                <img src="images/DuoProud.png" alt="Duolingo Logo" class="duolingo-logo">
+                <h1>Duolingo Tournament</h1>
+                <p>Are you ready to challenge yourself and people worldwide?</p>
+            </section>
+        
+            <!-- Description Section -->
+            <p class="description">
+                The Duolingo Tournament was a seasonal appointment of the community.<br>
+                A week of intense training on Duolingo, and who, at the end of the week, 
+                would have earned more XP gained the <span class="highlight-duo">@Duolingo Conqueror</span> roles on our Discord server.<br>
+                <br>The competition is currently suspended while we work to refresh it and change some rules to make it fair for everyone.
+            </p>
+        
+            <!-- Previous Winners Section -->
+            <section class="previous-winners-section">
+                <img src="images/trophy.png" alt="Trophy" width="100px">
+                <h2>Previous Winners</h2>
+                <div class="winners-list">
+                    <div class="winner">
+                        <p><strong>Tatiana</strong><br>9279 xp<br>December 2022</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>Row</strong><br>13561 xp<br>February 2023</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>Sheki</strong><br>12208 xp<br>July 2023</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>Yoana</strong><br>5094 xp<br>May 2023</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>CK</strong><br>3977 xp<br>October 2023</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>Merolyn</strong><br>8982 xp<br>February 2024</p>
+                    </div>
+                    <div class="winner">
+                        <p><strong>Murales</strong><br>14005 xp<br>June 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join Discord Section -->
+            <section class="join-discord">
+                <p>Join</p>
+                <a href="https://discord.gg/your-link-here">
+                <img src="images/discord-icon.png" alt="Discord Logo">
+                </a>
+                <p>to be updated on the next editions of the tournament</p>
+            </section>
+    </main>
+    
+      <footer>
+        <div class="footer-left">
+            <p>© 2023 by YOUthversity</p>
+            <p><a href="mailto:ellyskey.info@gmail.com">Mail Contact</a></p>
+        </div>
+        <div class="footer-center">
+            <a href="#" id="back-to-top">↑</a>
+        </div>
+        <div class="footer-right">
+            <a href="https://twitch.tv" target="_blank"><img src="images/twitch-icon.png" alt="Twitch"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://discord.com" target="_blank"><img src="images/discord-icon.png" alt="Discord"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+        </div>
+
+    
+    </footer>
+
+
+    <script src="scripts.js"></script>
+    <script>
+    document.querySelector('.join-button').addEventListener('click', function() {
+        window.location.href = 'https://discord.gg/your-link-here'; // Replace with actual link
+        });
+    </script>
+    
+    
+</body>
+
+</html>
