@@ -569,6 +569,34 @@ h1 {
   background-color: #8c4e25;
 }
 
+/*PLAYLIST*/
+
+#playlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container-playlist {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px; /* Spazio tra le sezioni */
+  width: 80vw;
+  height: 130vh;
+}
+
+.grid-item-playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px; /* Opzionale */
+}
+
 /*FOOTER*/
 
 footer {
