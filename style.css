@@ -1,0 +1,685 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fef6f2;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAD8C5;
+  color: black;
+  padding: 10px 20px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0 80px 0 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Button */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flex-container-comingsoon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.div-empty{
+  flex-basis: 500px;
+}
+
+#introduction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.highlight {
+  color: #f47c2e;
+}
+
+.intro-text p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#our-story {
+  display: flex;
+  justify-content: center;
+  align-content: right;
+  flex-direction: row;
+}
+
+#our-story h2 {
+  font-size: 28px;
+  color: black;
+}
+
+#our-story p {
+  font-size: 18px;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 52px; 
+}
+
+#why-youthversity{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*Who page*/
+.gallery{
+  width: 800px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  transform: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+
+.gallery-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+#backBtn, #nextBtn{
+  width: 35px;
+  cursor: pointer;
+}
+
+.gallery div img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.where-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.platforms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.platform {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.platform h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.platform h3 img {
+  margin-left: 10px;
+  width: 40px;
+}
+
+.platform ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.platform ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.platform ul li img {
+  margin-right: 10px;
+  width: 24px;
+}
+
+.platform ul li p {
+  margin: 5px 0 0 34px;
+}
+
+.discover-link {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  font-weight: bold;
+  color:black;
+  text-decoration: none;
+}
+
+.discover-link:hover {
+  text-decoration: underline;
+}
+
+/*BOOKCLUB*/
+
+#bookclub-body{
+  background-color: #e9ffff;
+}
+
+.bookclub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bookclubs{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bookclubs-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bookclub {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.bookclub h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.bookclub h3 img {
+  margin-left: 10px;
+  width: 40px;
+}
+
+.platform img {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.header p {
+  font-size: 1.5em;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header p img {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.suggestion-box {
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.suggestion-box h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.suggestion-box p {
+  font-size: 1.2em;
+}
+
+.suggestion-box textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+
+.goodreads-widget {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.goodreads-widget iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*DUOLINGO TOURNAMENT*/
+
+#duolingo-body{
+  background-color: #F6FFDA;
+}
+
+.tournament-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.duolingo-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #5c5c5c;
+  margin-bottom: 10px;
+}
+
+.duolingo-page p {
+  font-size: 1.2em;
+  color: #757575;
+}
+
+.description {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.highlight-duo {
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.previous-winners-section {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.previous-winners-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+
+.winners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.winner {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.winner p {
+  font-size: 1.1em;
+  color: #4d4d4d;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.join-discord {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.join-discord p {
+  font-size: 1.2em;
+  color: #757575;
+}
+
+.join-discord a img {
+  width: 60px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+
+.join-discord a img:hover {
+  transform: scale(1.1);
+}
+
+/*INTERVIEWS*/
+
+.interviews-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.interview-icon {
+  width: 100px;
+}
+
+.twitch-logo {
+  width: 25px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.header h1 span {
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-right: 5px;
+}
+
+.announcement {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 10px;
+}
+
+.suggestion-form-section {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-form-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+
+#suggestion-form label {
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 10px;
+  color: #4d4d4d;
+}
+
+#suggestion-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  font-size: 0.9em;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+#suggestion-form button {
+  padding: 10px 20px;
+  background-color: #a05a2c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#suggestion-form button:hover {
+  background-color: #8c4e25;
+}
+
+/*PLAYLIST*/
+
+#playlist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container-playlist {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px; /* Spazio tra le sezioni */
+  width: 80vw;
+  height: 130vh;
+}
+
+.grid-item-playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px; /* Opzionale */
+}
+
+/*FOOTER*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-left p, .footer-left a {
+  margin: 0;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-center {
+  font-size: 24px;
+}
+
+.footer-center a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right a {
+  margin: 0 5px;
+}
+
+.footer-right img {
+  width: 24px;
+  height: 24px;
+}
+
