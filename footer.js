@@ -57,7 +57,7 @@ footerTemplate.innerHTML = `
             <p><a href="mailto:ellyskey.info@gmail.com">Mail Contact</a></p>
         </div>
         <div class="footer-center">
-            <a href="#" id="back-to-top">^</a>
+            <a href="#" id="back-to-top">↑</a>
         </div>
         <div class="footer-right">
             <a href="https://twitch.tv/ellyskey" target="_blank"><img src="images/twitch-icon.png" alt="Twitch"></a>
@@ -85,4 +85,5 @@ class CustomFooter extends HTMLElement {
 }
 
 // Define the custom element
+
 customElements.define('custom-footer', CustomFooter);
