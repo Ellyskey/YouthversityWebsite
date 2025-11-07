@@ -112,6 +112,13 @@ nav {
   justify-content: center;
 }
 
+.discord {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  text-align: left;
+}
 
 main {
   padding: 20px;
@@ -179,6 +186,57 @@ h1 {
 }
 
 /*Who page*/
+
+.team {
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #5c5c5c;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: space-between; /* Optional spacing control */
+  gap: 20px; /* Space between boxes */
+  width: 100%;
+  max-width: 1200px; /* Optional, keeps content nicely centered */
+  margin: 0 auto; /* Centers container on the page */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.team-member {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.team p {
+  font-size: 1.1em;
+  color: #4d4d4d;
+  padding: 15px;
+  border-radius: 8px;
+}
+
 .gallery{
   width: 800px;
   display: flex;
@@ -410,6 +468,19 @@ h1 {
   background-color: #F6FFDA;
 }
 
+.languages-container {
+  display: flex;
+  flex-direction: row;   /* Place boxes side by side */
+  flex-wrap: nowrap;     /* Prevent stacking */
+  justify-content: space-between; /* Optional spacing control */
+  gap: 20px; /* Space between boxes */
+  width: 100%;
+  max-width: 1200px; /* Optional, keeps content nicely centered */
+  margin: 0 auto; /* Centers container on the page */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 .languages {
   max-width: 800px;
   margin: 0 auto;
@@ -419,6 +490,17 @@ h1 {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Make the wide one double the width */
+.languages-wide {
+  flex: 2 1 0%;
+}
+
+/* Make the narrow one half that */
+.languages-narrow {
+  flex: 1 1 0%;
 }
 
 .languages img {
@@ -591,19 +673,59 @@ h1 {
   margin-bottom: 40px;
 }
 
-/*COMING SOON */
+/*CREATIVITY*/
 
-.comingsoon-container {
+#creativity-body{
+  background-color: #ffdf9ada;
+}
+
+.creativity-container {
+  display: flex;
+  flex-wrap: nowrap;     /* Prevent stacking */
+  flex-direction: row;
+  justify-content: space-between; /* Optional spacing control */
+  gap: 20px; /* Space between boxes */
+  width: 100%;
+  max-width: 1200px; /* Optional, keeps content nicely centered */
+  margin: 0 auto; /* Centers container on the page */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.creativity {
+  flex: 1;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
   align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
-.comingsoon {
-  width: 500px;
-  height: 500px
-  text-align: left;
+/* Make the wide one double the width */
+.creaitivy-wide {
+  flex: 1 1 0%;
+}
+
+/* Make the narrow one half that */
+.creativity-narrow {
+  flex: 1 1 0%;
+}
+
+.creativity img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*GAMING*/
+
+#gaming-body{
+  background-color: #ffe4e4;
 }
 
 
