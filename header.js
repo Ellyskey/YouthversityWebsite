@@ -118,7 +118,7 @@ nav {
             <div class="dropdown"><i class="fa fa-caret-down"></i>
                 <button class="dropbtn">Activities</button>
                 <div class="dropdown-content">
-                  <a href="https://youthversity.org/bookclub">Bookclub</a>
+                  <a href="https://youthversity.org/bookclub">Bookish</a>
                   <a href="https://youthversity.org/creativity">Creativity</a>
                   <a href="https://youthversity.org/wellness">Wellness</a>
                   <a href="https://youthversity.org/languages">Languages</a>
@@ -147,4 +147,5 @@ class CustomHeader extends HTMLElement {
 }
 
 // Define the custom element
+
 customElements.define('custom-header', CustomHeader);
