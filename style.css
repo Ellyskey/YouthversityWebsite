@@ -179,10 +179,31 @@ h1 {
     font-size: 52px; 
 }
 
-#why-youthversity{
+/*#why-youthversity{
   display: flex;
   justify-content: center;
   flex-direction: row;
+}*/
+
+.why-youthversity-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.why-youthversity {
+  width: 100%;
+  max-width: 1200px;   /* same width everywhere */
+  padding: 0 20px;     /* inner spacing */
+  box-sizing: border-box;
+}
+
+.why-youthversity h2 {
+  font-size: 28px;
+}
+
+.why-youthversity p {
+  font-size: 18px;
 }
 
 /*Who page*/
@@ -933,5 +954,6 @@ footer {
   width: 24px;
   height: 24px;
 }
+
 
 
