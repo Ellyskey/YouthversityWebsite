@@ -57,6 +57,8 @@ headerTemplate.innerHTML = `
       color: black;
       text-decoration: none;
       font-size: 18px;
+      width: 100%;
+      display: block;
     }
 
     /* Dropdown */
@@ -91,6 +93,7 @@ headerTemplate.innerHTML = `
       text-decoration: none;
       display: block;
       text-align: left;
+      width: 100%;
     }
 
     /* Hover effects — pointer devices only (not touch) */
@@ -168,11 +171,19 @@ headerTemplate.innerHTML = `
         flex-direction: column;
         margin: 0;
         padding: 10px 0;
-      }
 
-      .nav-links > li, 
-      .nav-links > div {
-        margin: 10px 0;
+        & > li,
+        & > div {
+          margin: 0;
+          display: block;
+
+          & > a, 
+          & > button {
+            padding: 10px 0;
+            width: 100%;
+            text-align: left;
+          }
+        }
       }
 
       .dropdown {
@@ -183,7 +194,6 @@ headerTemplate.innerHTML = `
       .dropdown-content {
         position: static;
         box-shadow: none;
-        padding-left: 15px;
         margin-top: 10px;
       }
 

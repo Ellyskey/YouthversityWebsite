@@ -92,19 +92,19 @@ main.who-are-we > section {
   justify-content: center;
   align-content: end;
   flex-direction: row;
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
 
   &.team {
     flex-direction: column;
   }
 
-  & > h2 {
+  & h2 {
     font-size: 28px;
     color: black;
   }
 
-  & > p {
+  & p {
     font-size: 18px;
   }
 
