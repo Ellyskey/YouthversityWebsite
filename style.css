@@ -1,3 +1,7 @@
+:root {
+  --highlight-color: #f47c2e;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fef6f2;
@@ -17,6 +21,13 @@ body {
   padding: 20px;
   width: 500px;
   text-align: left;
+  background: white;
+}
+
+@media (width <= 800px) {
+  .discord {
+    width: unset;
+  }
 }
 
 main {
@@ -37,8 +48,13 @@ main {
 .intro-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-wrap: pretty;
   max-width: 800px;
+
+  & > .intro-text > *:not(:first-child) {
+    padding-top: 10px;
+  }
 }
 
 @media (width <= 800px) {
@@ -63,7 +79,7 @@ main {
 }
 
 .highlight {
-  color: #f47c2e;
+  color: var(--highlight-color);
 }
 
 .intro-text p {
@@ -71,20 +87,30 @@ main {
   margin: 10px 0;
 }
 
-#our-story {
+main.who-are-we > section {
   display: flex;
   justify-content: center;
-  align-content: right;
+  align-content: end;
   flex-direction: row;
-}
+  max-width: 720px;
+  margin: 0 auto;
 
-#our-story h2 {
-  font-size: 28px;
-  color: black;
-}
+  &.team {
+    flex-direction: column;
+  }
 
-#our-story p {
-  font-size: 18px;
+  & > h2 {
+    font-size: 28px;
+    color: black;
+  }
+
+  & > p {
+    font-size: 18px;
+  }
+
+  & img {
+    max-width: 100%;
+  }
 }
 
 h1 {
@@ -117,8 +143,6 @@ h1 {
 
 .team {
   margin-top: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -156,6 +180,16 @@ h1 {
   box-sizing: border-box;
   width: 45%;
   margin-bottom: 20px;
+}
+
+@media (width <= 800px) {
+  .team-list {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 100%;
+  }
 }
 
 .team-member h3 img {
@@ -233,6 +267,16 @@ h1 {
   text-align: left;
 }
 
+@media (width <= 800px) {
+  .platforms {
+    flex-direction: column;
+  }
+
+  .platform {
+    width: unset;
+  }
+}
+
 .platform h3 {
   font-size: 1.8em;
   margin-bottom: 20px;
@@ -277,6 +321,10 @@ h1 {
 
 .discover-link:hover {
   text-decoration: underline;
+}
+
+iframe.google-calendar {
+  max-width: 100%;
 }
 
 /*BOOKCLUB*/
@@ -414,6 +462,14 @@ h1 {
   margin: 0 auto; /* Centers container on the page */
   box-sizing: border-box;
   padding: 20px;
+}
+
+@media (width <= 800px) {
+  .languages-container {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .languages {
@@ -562,6 +618,12 @@ h1 {
   text-align: left;
 }
 
+@media (width <= 800px) {
+  .wplatform {
+    width: unset;
+  }
+}
+
 .wplatform h3 {
   font-size: 1.8em;
   margin-bottom: 20px;
@@ -591,6 +653,13 @@ h1 {
   margin: 0 auto; /* Centers container on the page */
   box-sizing: border-box;
   padding: 20px;
+}
+
+@media (width <= 800px) {
+  .creativity-container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
 }
 
 .creativity {
