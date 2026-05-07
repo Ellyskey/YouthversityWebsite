@@ -3,136 +3,136 @@
 // Create a template for the header content
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
-    <style> 
-    header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FAD8C5;
-  color: black;
-  padding: 10px 20px;
-}
+<style> 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAD8C5;
+    color: black;
+    padding: 10px 20px;
+  }
 
-.logo-title {
-  display: flex;
-  align-items: center;
-}
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 15px;
-}
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
 
-.site-title {
-  margin: 0;
-  font-size: 24px;
-}
+  .site-title {
+    margin: 0;
+    font-size: 24px;
+  }
 
-nav {
-  display: flex;
-}
+  nav {
+    display: flex;
+  }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0 80px 0 0;
-  padding: 0;
-}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0 80px 0 0;
+    padding: 0;
+  }
 
-.nav-links li {
-  margin: 0 10px;
-}
+  .nav-links li {
+    margin: 0 10px;
+  }
 
-.nav-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-}
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
 
-/* Dropdown Button */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+  /* Dropdown Button */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
 
-.dropdown .dropbtn {
-  font-size: 18px;  
-  border: none;
-  outline: none;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+  .dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  text-decoration: underline;
-}
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    text-decoration: underline;
+  }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
 
-.dropdown-content a:hover {
-  text-decoration: underline;
-}
+  .dropdown-content a:hover {
+    text-decoration: underline;
+  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.flex-container-comingsoon{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-    </style>
-  <header>
-    <div class="logo-title">
-        <img src="images/YOUthversityLogo.avif" alt="YOUthversity" class="logo">
-        <h1 class="site-title"><span class="highlight">YOU</span>thversity</h1>
-    </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/who">Who</a></li>
-            <li><a href="/where">Where</a></li>
-            <div class="dropdown"><i class="fa fa-caret-down"></i>
-                <button class="dropbtn">Activities</button>
-                <div class="dropdown-content">
-                  <a href="/bookclub">Bookish</a>
-                  <a href="/creativity">Creativity</a>
-                  <a href="/wellness">Wellness</a>
-                  <a href="/languages">Languages</a>
-                  <a href="/gaming">sGaming</a>
-                </div>
-              </div>
-            <div class="dropdown"><i class="fa fa-caret-down"></i>
-                <button class="dropbtn">More</button>
-                <div class="dropdown-content">
-                    <a href="https://ellyskey.notion.site/Elly-s-Info-Page-29076275cf004a24a5e74973f5f70019?pvs=4">Elly's Mediakit</a>
-                </div>
-              </div>
-        </ul>
-    </nav>
+  .flex-container-comingsoon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+</style>
+<header>
+  <div class="logo-title">
+      <img src="images/YOUthversityLogo.avif" alt="YOUthversity" class="logo">
+      <h1 class="site-title"><span class="highlight">YOU</span>thversity</h1>
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/who">Who</a></li>
+      <li><a href="/where">Where</a></li>
+      <div class="dropdown"><i class="fa fa-caret-down"></i>
+        <button class="dropbtn">Activities</button>
+        <div class="dropdown-content">
+          <a href="/bookclub">Bookish</a>
+          <a href="/creativity">Creativity</a>
+          <a href="/wellness">Wellness</a>
+          <a href="/languages">Languages</a>
+          <a href="/gaming">sGaming</a>
+        </div>
+      </div>
+      <div class="dropdown"><i class="fa fa-caret-down"></i>
+        <button class="dropbtn">More</button>
+        <div class="dropdown-content">
+          <a href="https://ellyskey.notion.site/Elly-s-Info-Page-29076275cf004a24a5e74973f5f70019?pvs=4">Elly's Mediakit</a>
+        </div>
+      </div>
+    </ul>
+  </nav>
 </header>
 `;
 

@@ -9,7 +9,6 @@
     />
     <!--external CSS link-->
     <link rel="stylesheet" href="style.css" />
-    <style></style>
   </head>
 
   <!-- Cookies manager -->
@@ -31,9 +30,9 @@
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", new Date());
+    gtag('js', new Date());
 
-    gtag("config", "G-7K2F6GW0BY");
+    gtag('config', 'G-7K2F6GW0BY');
   </script>
 
   <!-- Impact verification -->
@@ -330,20 +329,20 @@
 
     <script src="scripts.js"></script>
     <script>
-      let scrollContainer = document.querySelector(".gallery");
-      let backBtn = document.getElementById("backBtn");
-      let nextBtn = document.getElementById("nextBtn");
-      scrollContainer.addEventListener("wheel", (evt) => {
+      let scrollContainer = document.querySelector('.gallery');
+      let backBtn = document.getElementById('backBtn');
+      let nextBtn = document.getElementById('nextBtn');
+      scrollContainer.addEventListener('wheel', (evt) => {
         evt.preventDefault();
         scrollContainer.scrollLeft += evt.deltaY;
-        scrollContainer.style.scrollBehavior = "auto";
+        scrollContainer.style.scrollBehavior = 'auto';
       });
-      nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
+      nextBtn.addEventListener('click', () => {
+        scrollContainer.style.scrollBehavior = 'smooth';
         scrollContainer.scrollLeft += 900;
       });
-      backBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
+      backBtn.addEventListener('click', () => {
+        scrollContainer.style.scrollBehavior = 'smooth';
         scrollContainer.scrollLeft -= 900;
       });
     </script>
