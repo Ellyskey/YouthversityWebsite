@@ -1,111 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">  
-<head>
-    <title> YOUthversity | Where </title>
-    <link rel="icon" type="image/x-icon" href="/images/YOUthversityLogo.png">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>YOUthversity | Where</title>
+    <link rel="icon" type="image/x-icon" href="/images/YOUthversityLogo.avif" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
     <!--external CSS link-->
-    <link rel="stylesheet" href="style.css">
-    <style>
-        </style>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<!-- Cookies manager -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0c056ee2-edd4-4f43-86ee-57aad672b71d" data-blockingmode="auto" type="text/javascript"></script>
-    
-<!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K2F6GW0BY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Cookies manager -->
+  <script
+    id="Cookiebot"
+    src="https://consent.cookiebot.com/uc.js"
+    data-cbid="0c056ee2-edd4-4f43-86ee-57aad672b71d"
+    data-blockingmode="auto"
+    type="text/javascript"
+  ></script>
 
-      gtag('config', 'G-7K2F6GW0BY');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7K2F6GW0BY"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<!-- Metricool tracker-->
-<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"400951fdbd536626e3e03bb0cfaabc25"})});</script>
+    gtag("config", "G-7K2F6GW0BY");
+  </script>
 
-<body>
+  <!-- Metricool tracker-->
+  <script>
+    function loadScript(a) {
+      var b = document.getElementsByTagName("head")[0],
+        c = document.createElement("script");
+      ((c.type = "text/javascript"),
+        (c.src = "https://tracker.metricool.com/resources/be.js"),
+        (c.onreadystatechange = a),
+        (c.onload = a),
+        b.appendChild(c));
+    }
+    loadScript(function () {
+      beTracker.t({ hash: "400951fdbd536626e3e03bb0cfaabc25" });
+    });
+  </script>
 
+  <body>
     <!-- Use your custom header component -->
     <custom-header></custom-header>
-    
+
     <main>
-        <div class="where-container">
-            <h2>Where are we?</h2>
-            <div class="platforms">
-                <div class="platform twitch">
-                    <h3>Twitch <img src="images/twitch-icon.png" alt="Twitch logo"></h3>
-                    <ul>
-                        <li><img src="images/Pomodoro.png" alt="Tomato icon"> <strong>Coworking stream</strong>
-                            <p>using <em>Pomodoro Technique</em><br>
-                            be productive with people from all over the world</p>
-                        </li>
-                        <li><strong>Why join?</strong></li>
-                        <li><img src="images/motivation.png" alt="Motivation icon"> Get motivated</li>
-                        <li><img src="images/support.png" alt="Support icon"> Be supported</li>
-                        <li><img src="images/schedule.png" alt="Schedule icon"> Find your schedule</li>
-                        <li><img src="images/goals.png" alt="Goals icon"> Reach your goals</li>
-                        <hr class="divider">
-                        <li><img src="images/gaming.png" alt="Gaming icon"> <strong>Gaming stream</strong>
-                            <p>Usually focusing on cozy and chill games</p>
-                        </li>
-                        <li><img src="images/irl.png" alt="IRL icon"> <strong>IRL streams</strong>
-                            <p>Come with me to discover new places</p>
-                        </li>
-                        <li><img src="images/cooking.png" alt="Cooking icon"> <strong>Cooking streams</strong>
-                            <p>Honestly just Elly making a mess in her kitchen</p>
-                        </li>
-                        <li><img src="images/random.png" alt="Random icon"> <strong>Random streams</strong>
-                            <p>Come to chat, hang out</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="discover-link">Discover more...</a>
-                </div>
-        
-                <div class="platform discord">
-                    <h3>Discord <img src="images/discord-icon.png" alt="Discord logo"></h3>
-                    <ul>
-                        <li><img src="images/accountability.png" alt="Accountability icon"> <strong>Accountability</strong>
-                            <p>Study rooms<br>
-                            Productivity tools<br>
-                            Languages</p>
-                        </li>
-                        <li><img src="images/community.png" alt="Community icon"> <strong>Community</strong>
-                            <p>Movie nights 🎬<br>
-                            <a href="#">Bookclub 📚</a><br>
-                            Gaming nights 🎮</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="discover-link">Discover more...</a>
-                </div>
-            </div>
-            <br>
-            <hr class="divider">
-            <br>
-            <div>
-                <div class="div-empty"></div>
-            <div class="intro-text">
-                <h1>Community Schedule</h1>
-                <br>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FRome&bgcolor=%23F6BF26&showPrint=0&mode=WEEK&title=YOUthversity%20Schedule&src=MjNhZmEzMmM3ZDg4ZTRjZGVmZWM0ZTJlYjk5MzkwMWQ3MGYxZjExODA5NjZmNGI4YWQ2NmI4NmIwNzZkYTFmMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="div-empty"></div>
-            </div>
+      <div class="where-container">
+        <h2>Where are we?</h2>
+        <div class="platforms">
+          <div class="platform twitch">
+            <h3>
+              Twitch <img src="images/twitch-icon.avif" alt="Twitch logo" />
+            </h3>
+            <ul>
+              <li>
+                <img src="images/Pomodoro.avif" alt="Tomato icon" />
+                <strong>Coworking stream</strong>
+                <p>
+                  using <em>Pomodoro Technique</em><br />
+                  be productive with people from all over the world
+                </p>
+              </li>
+              <li><strong>Why join?</strong></li>
+              <li>
+                <img src="images/motivation.avif" alt="Motivation icon" /> Get
+                motivated
+              </li>
+              <li>
+                <img src="images/support.avif" alt="Support icon" /> Be
+                supported
+              </li>
+              <li>
+                <img src="images/schedule.avif" alt="Schedule icon" /> Find your
+                schedule
+              </li>
+              <li>
+                <img src="images/goals.avif" alt="Goals icon" /> Reach your
+                goals
+              </li>
+              <hr class="divider" />
+              <li>
+                <img src="images/gaming.avif" alt="Gaming icon" />
+                <strong>Gaming stream</strong>
+                <p>Usually focusing on cozy and chill games</p>
+              </li>
+              <li>
+                <img src="images/irl.avif" alt="IRL icon" />
+                <strong>IRL streams</strong>
+                <p>Come with me to discover new places</p>
+              </li>
+              <li>
+                <img src="images/cooking.avif" alt="Cooking icon" />
+                <strong>Cooking streams</strong>
+                <p>Honestly just Elly making a mess in her kitchen</p>
+              </li>
+              <li>
+                <img src="images/random.avif" alt="Random icon" />
+                <strong>Random streams</strong>
+                <p>Come to chat, hang out</p>
+              </li>
+            </ul>
+            <a href="#" class="discover-link">Discover more...</a>
+          </div>
+
+          <div class="platform discord">
+            <h3>
+              Discord <img src="images/discord-icon.avif" alt="Discord logo" />
+            </h3>
+            <ul>
+              <li>
+                <img
+                  src="images/accountability.avif"
+                  alt="Accountability icon"
+                />
+                <strong>Accountability</strong>
+                <p>
+                  Study rooms<br />
+                  Productivity tools<br />
+                  Languages
+                </p>
+              </li>
+              <li>
+                <img src="images/community.avif" alt="Community icon" />
+                <strong>Community</strong>
+                <p>
+                  Movie nights 🎬<br />
+                  <a href="#">Bookclub 📚</a><br />
+                  Gaming nights 🎮
+                </p>
+              </li>
+            </ul>
+            <a href="#" class="discover-link">Discover more...</a>
+          </div>
         </div>
+        <br />
+        <hr class="divider" />
+        <br />
+        <div>
+          <div class="div-empty"></div>
+          <div class="intro-text">
+            <h1>Community Schedule</h1>
+            <br />
+            <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FRome&bgcolor=%23F6BF26&showPrint=0&mode=WEEK&title=YOUthversity%20Schedule&src=MjNhZmEzMmM3ZDg4ZTRjZGVmZWM0ZTJlYjk5MzkwMWQ3MGYxZjExODA5NjZmNGI4YWQ2NmI4NmIwNzZkYTFmMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23EF6C00"
+              style="border-width: 0"
+              width="800"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
+          <div class="div-empty"></div>
+        </div>
+      </div>
     </main>
-    
-      <!-- Use your custom header component -->
+
+    <!-- Use your custom header component -->
     <custom-footer></custom-footer>
 
     <!-- Include your component JavaScript files -->
     <script src="header.js"></script>
     <script src="footer.js"></script>
     <script src="scripts.js"></script>
-    
-</body>
-
+  </body>
 </html>
-
-

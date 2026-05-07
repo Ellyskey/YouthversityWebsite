@@ -1,7 +1,7 @@
 // components/header.js
 
 // Create a template for the header content
-const headerTemplate = document.createElement('template');
+const headerTemplate = document.createElement("template");
 headerTemplate.innerHTML = `
     <style> 
     header {
@@ -107,7 +107,7 @@ nav {
     </style>
   <header>
     <div class="logo-title">
-        <img src="images/YOUthversityLogo.png" alt="YOUthversity" class="logo">
+        <img src="images/YOUthversityLogo.avif" alt="YOUthversity" class="logo">
         <h1 class="site-title"><span class="highlight">YOU</span>thversity</h1>
     </div>
     <nav>
@@ -140,7 +140,7 @@ class CustomHeader extends HTMLElement {
   constructor() {
     super();
     // Attach a shadow root to the element
-    this.attachShadow({ mode: 'open' }); // 'open' allows external JS to access shadow DOM if needed
+    this.attachShadow({ mode: "open" }); // 'open' allows external JS to access shadow DOM if needed
     // Append the template content to the shadow root
     this.shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
   }
@@ -148,4 +148,4 @@ class CustomHeader extends HTMLElement {
 
 // Define the custom element
 
-customElements.define('custom-header', CustomHeader);
+customElements.define("custom-header", CustomHeader);

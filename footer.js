@@ -1,7 +1,7 @@
 // components/footer.js
 
 // Create a template for the footer content
-const footerTemplate = document.createElement('template');
+const footerTemplate = document.createElement("template");
 footerTemplate.innerHTML = `
   <style>
   footer {
@@ -60,12 +60,12 @@ footerTemplate.innerHTML = `
             <a href="#" id="back-to-top">↑</a>
         </div>
         <div class="footer-right">
-            <a href="https://twitch.tv/ellyskey" target="_blank"><img src="images/twitch-icon.png" alt="Twitch"></a>
-            <a href="https://instagram.com/ellyskey" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="https://discord.gg/mPkkexxbQw" target="_blank"><img src="images/discord-icon.png" alt="Discord"></a>
-            <a href="https://twitter.com/ellyskey" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
-            <a href="https://youtube.com/@ellyskey" target="_blank"><img src="images/youtube-icon.png" alt="YouTube"></a>
-            <a href="https://tiktok.com/@ellyskey" target="_blank"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+            <a href="https://twitch.tv/ellyskey" target="_blank"><img src="images/twitch-icon.avif" alt="Twitch"></a>
+            <a href="https://instagram.com/ellyskey" target="_blank"><img src="images/instagram-icon.avif" alt="Instagram"></a>
+            <a href="https://discord.gg/mPkkexxbQw" target="_blank"><img src="images/discord-icon.avif" alt="Discord"></a>
+            <a href="https://twitter.com/ellyskey" target="_blank"><img src="images/twitter-icon.avif" alt="Twitter"></a>
+            <a href="https://youtube.com/@ellyskey" target="_blank"><img src="images/youtube-icon.avif" alt="YouTube"></a>
+            <a href="https://tiktok.com/@ellyskey" target="_blank"><img src="images/tiktok-icon.avif" alt="TikTok"></a>
         </div>
           
 <!-- Metricool tracker-->
@@ -78,7 +78,7 @@ class CustomFooter extends HTMLElement {
   constructor() {
     super();
     // Attach a shadow root
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
     // Append the template content
     this.shadowRoot.appendChild(footerTemplate.content.cloneNode(true));
   }
@@ -86,4 +86,4 @@ class CustomFooter extends HTMLElement {
 
 // Define the custom element
 
-customElements.define('custom-footer', CustomFooter);
+customElements.define("custom-footer", CustomFooter);
