@@ -1,7 +1,7 @@
 // components/header.js
 
 // Create a template for the header content
-const headerTemplate = document.createElement("template");
+const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
     <style> 
     header {
@@ -112,17 +112,17 @@ nav {
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a href="https://youthversity.org/">Home</a></li>
-            <li><a href="https://youthversity.org/who">Who</a></li>
-            <li><a href="https://youthversity.org/where">Where</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/who">Who</a></li>
+            <li><a href="/where">Where</a></li>
             <div class="dropdown"><i class="fa fa-caret-down"></i>
                 <button class="dropbtn">Activities</button>
                 <div class="dropdown-content">
-                  <a href="https://youthversity.org/bookclub">Bookish</a>
-                  <a href="https://youthversity.org/creativity">Creativity</a>
-                  <a href="https://youthversity.org/wellness">Wellness</a>
-                  <a href="https://youthversity.org/languages">Languages</a>
-                  <a href="https://youthversity.org/gaming">Gaming</a>
+                  <a href="/bookclub">Bookish</a>
+                  <a href="/creativity">Creativity</a>
+                  <a href="/wellness">Wellness</a>
+                  <a href="/languages">Languages</a>
+                  <a href="/gaming">sGaming</a>
                 </div>
               </div>
             <div class="dropdown"><i class="fa fa-caret-down"></i>
@@ -140,7 +140,7 @@ class CustomHeader extends HTMLElement {
   constructor() {
     super();
     // Attach a shadow root to the element
-    this.attachShadow({ mode: "open" }); // 'open' allows external JS to access shadow DOM if needed
+    this.attachShadow({ mode: 'open' }); // 'open' allows external JS to access shadow DOM if needed
     // Append the template content to the shadow root
     this.shadowRoot.appendChild(headerTemplate.content.cloneNode(true));
   }
@@ -148,4 +148,4 @@ class CustomHeader extends HTMLElement {
 
 // Define the custom element
 
-customElements.define("custom-header", CustomHeader);
+customElements.define('custom-header', CustomHeader);
